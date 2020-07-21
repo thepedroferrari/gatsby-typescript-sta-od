@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Header from "./Header";
 import { GlobalStyle } from "./GlobalStyle";
-// import "./layout.css";
 
 interface LayoutProps {
   children: JSX.Element[] | JSX.Element;
