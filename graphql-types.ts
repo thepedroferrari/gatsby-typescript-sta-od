@@ -1774,6 +1774,13 @@ export type SiteFieldsEnum =
   | 'siteMetadata___title'
   | 'siteMetadata___description'
   | 'siteMetadata___author'
+  | 'siteMetadata___name'
+  | 'siteMetadata___address'
+  | 'siteMetadata___address___address'
+  | 'siteMetadata___address___city'
+  | 'siteMetadata___address___district'
+  | 'siteMetadata___address___phone'
+  | 'siteMetadata___address___whatsApp'
   | 'port'
   | 'host'
   | 'polyfill'
@@ -2435,12 +2442,36 @@ export type SiteSiteMetadata = {
   title?: Maybe<Scalars['String']>;
   description?: Maybe<Scalars['String']>;
   author?: Maybe<Scalars['String']>;
+  name?: Maybe<Scalars['String']>;
+  address?: Maybe<Array<Maybe<SiteSiteMetadataAddress>>>;
+};
+
+export type SiteSiteMetadataAddress = {
+  address?: Maybe<Scalars['String']>;
+  city?: Maybe<Scalars['String']>;
+  district?: Maybe<Scalars['String']>;
+  phone?: Maybe<Scalars['String']>;
+  whatsApp?: Maybe<Scalars['String']>;
+};
+
+export type SiteSiteMetadataAddressFilterInput = {
+  address?: Maybe<StringQueryOperatorInput>;
+  city?: Maybe<StringQueryOperatorInput>;
+  district?: Maybe<StringQueryOperatorInput>;
+  phone?: Maybe<StringQueryOperatorInput>;
+  whatsApp?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SiteSiteMetadataAddressFilterListInput = {
+  elemMatch?: Maybe<SiteSiteMetadataAddressFilterInput>;
 };
 
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
   author?: Maybe<StringQueryOperatorInput>;
+  name?: Maybe<StringQueryOperatorInput>;
+  address?: Maybe<SiteSiteMetadataAddressFilterListInput>;
 };
 
 export type SiteSortInput = {
