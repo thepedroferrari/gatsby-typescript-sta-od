@@ -1,0 +1,102 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-helmet": "^6.0.0",
+    "@types/styled-components": "^5.1.0",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-typescript": "^8.0.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "gatsby": "^2.20.12",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-graphql-codegen": "^2.7.1",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-typescript": "^2.3.1",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "prettier": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "styled-components": "^5.1.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn type-check && yarn lint && gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
+    "serve": "gatsby serve",
+    "start": "yarn develop",
+    "test": "yarn type-check && yarn lint && echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "type-check:watch": "yarn type-check -- --watch",
+    "type-check": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "eslintConfig": {
+    "ignorePatterns": [
+      ".cache",
+      "public",
+      "graphql-types.ts"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "globals": {
+      "__PATH_PREFIX__": true
+    },
+    "extends": [
+      "airbnb-typescript",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/indent": [
+        "off"
+      ],
+      "@typescript-eslint/quotes": [
+        "error",
+        "double"
+      ],
+      "arrow-body-style": [
+        "off"
+      ],
+      "comma-dangle": [
+        "off"
+      ],
+      "import/prefer-default-export": [
+        "off"
+      ],
+      "object-curly-newline": [
+        "off"
+      ],
+      "react/jsx-one-expression-per-line": [
+        "off"
+      ]
+    }
+  }
+}
