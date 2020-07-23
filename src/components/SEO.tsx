@@ -12,13 +12,13 @@ import { useStaticQuery, graphql } from "gatsby";
 
 type Metadatum =
   | {
-      name: string;
-      content: any;
-    }
+    name: string;
+    content: any;
+  }
   | {
-      property: string;
-      content: any;
-    };
+    property: string;
+    content: any;
+  };
 
 interface SEOProps {
   description: string;
@@ -90,7 +90,7 @@ function SEO({ description, lang, meta, title }: SEOProps) {
 }
 
 SEO.defaultProps = {
-  lang: "en",
+  lang: "pt-br",
   meta: [],
   description: "",
 };

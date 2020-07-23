@@ -1779,8 +1779,11 @@ export type SiteFieldsEnum =
   | 'siteMetadata___address___address'
   | 'siteMetadata___address___city'
   | 'siteMetadata___address___district'
+  | 'siteMetadata___address___email'
   | 'siteMetadata___address___phone'
   | 'siteMetadata___address___whatsApp'
+  | 'siteMetadata___socialNetworks___facebook'
+  | 'siteMetadata___socialNetworks___instagram'
   | 'port'
   | 'host'
   | 'polyfill'
@@ -2444,12 +2447,14 @@ export type SiteSiteMetadata = {
   author?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
   address?: Maybe<Array<Maybe<SiteSiteMetadataAddress>>>;
+  socialNetworks?: Maybe<SiteSiteMetadataSocialNetworks>;
 };
 
 export type SiteSiteMetadataAddress = {
   address?: Maybe<Scalars['String']>;
   city?: Maybe<Scalars['String']>;
   district?: Maybe<Scalars['String']>;
+  email?: Maybe<Scalars['String']>;
   phone?: Maybe<Scalars['String']>;
   whatsApp?: Maybe<Scalars['String']>;
 };
@@ -2458,6 +2463,7 @@ export type SiteSiteMetadataAddressFilterInput = {
   address?: Maybe<StringQueryOperatorInput>;
   city?: Maybe<StringQueryOperatorInput>;
   district?: Maybe<StringQueryOperatorInput>;
+  email?: Maybe<StringQueryOperatorInput>;
   phone?: Maybe<StringQueryOperatorInput>;
   whatsApp?: Maybe<StringQueryOperatorInput>;
 };
@@ -2472,6 +2478,17 @@ export type SiteSiteMetadataFilterInput = {
   author?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   address?: Maybe<SiteSiteMetadataAddressFilterListInput>;
+  socialNetworks?: Maybe<SiteSiteMetadataSocialNetworksFilterInput>;
+};
+
+export type SiteSiteMetadataSocialNetworks = {
+  facebook?: Maybe<Scalars['String']>;
+  instagram?: Maybe<Scalars['String']>;
+};
+
+export type SiteSiteMetadataSocialNetworksFilterInput = {
+  facebook?: Maybe<StringQueryOperatorInput>;
+  instagram?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SiteSortInput = {

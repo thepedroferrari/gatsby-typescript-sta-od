@@ -2,8 +2,14 @@ interface IAddress {
   address: string;
   city: 'Campinas' | 'Itatiba';
   district: string;
+  email: string;
   phone: string;
   whatsApp: string;
+}
+
+interface ISocialNetworks {
+  facebook: 'https://www.facebook.com/santa.odila',
+  instagram: 'https://www.instagram.com/santa.odila'
 }
 
 interface ISiteMetadata {
@@ -12,6 +18,7 @@ interface ISiteMetadata {
   author: string;
   name: string;
   address: IAddress[];
+  socialNetworks: ISocialNetworks;
 }
 
 export const siteMetadata: ISiteMetadata = {
@@ -25,6 +32,7 @@ export const siteMetadata: ISiteMetadata = {
       address: 'Rua Abolição, 3283',
       city: 'Campinas',
       district: 'Bela Vista',
+      email: 'santaodila@uol.com.br',
       phone: '(19) 3779-7993',
       whatsApp: '5519991130323'
     },
@@ -32,17 +40,23 @@ export const siteMetadata: ISiteMetadata = {
       address: 'Av. Edmundo Vignatti, 371',
       city: 'Campinas',
       district: 'Esmeraldina',
+      email: 'santaodila2@uol.com.br',
       phone: '(19) 3276-7787',
-      whatsApp: ' '
+      whatsApp: '5519994618225'
     },
     {
       address: 'Av. Benedito Alves Barbosa Sobrinho, 810',
       city: 'Itatiba',
       district: 'Brotas',
+      email: 'santaodila3@uol.com.br',
       phone: '(11) 4524-6617',
       whatsApp: '5511956807642'
     },
-  ]
+  ],
+  socialNetworks: {
+    facebook: 'https://www.facebook.com/santa.odila',
+    instagram: 'https://www.instagram.com/santa.odila'
+  }
 };
 
 export const plugins = [
