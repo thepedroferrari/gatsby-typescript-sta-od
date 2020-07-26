@@ -75,11 +75,14 @@ export const GlobalStyle = createGlobalStyle`
   --padding: 1em;
   --smallLargePadding: calc(var(--padding) / 2) var(--padding);
   --margin: 1.5em;
-  --max-basis-font: 21px;
+  --max-basis-font: 24px;
   --line-height: 1.7;
 
+  --desktop: 48em;
+  --mobile: 26em;
+
   /* Other */
-  font-size: calc(12px + 1vmin);
+  font-size: calc(13px + 1vmin);
 }
 
 @media screen and (min-width: 60rem) {
@@ -176,13 +179,13 @@ a {
 	background-color: transparent;
   color: var(--link-primary);
   font-weight: 500;
-  transition: all .2s ease-in;
 }
 
 a:hover {
   color: var(--link-medium);
   text-decoration: underline;
   text-decoration-skip: skip;
+  transition: all .2s ease-in;
 }
 
 abbr[title] {
@@ -373,6 +376,9 @@ label {
 .cols-3 {
   --gridCols: 3;
 }
+.cols-4 {
+  --gridCols: 4;
+}
 
 .flex {
   --justifyContent: space-between;
@@ -391,6 +397,16 @@ label {
   .flex {
     display: flex;
   }
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 `;

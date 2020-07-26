@@ -2,10 +2,11 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import styled from 'styled-components';
+import Logo from "./Logo";
 
 const SiteHeader = styled.header`
   background-color: var(--darkBlue);
-  box-shadow: var(--level-2);
+  box-shadow: var(--level-2), var(--level-1);
   color: var(--white);
   display: flex;
   min-height: 3rem;
@@ -15,6 +16,7 @@ const SiteHeader = styled.header`
 
   & a {
     color: var(--white);
+    display: inline-block;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: var(pText);
@@ -29,24 +31,31 @@ const SiteHeader = styled.header`
       margin-left: calc(var(--margin) / 2);
     }
   }
+  h1 {
+    margin: 0;
+  }
 `;
 
 
-const Header = () => (
-  <SiteHeader>
-    <h1 style={{ margin: 0 }}>
-      <Link to="/">SantaOdila</Link>
-    </h1>
-    <nav>
-      <Link to="/">Quem Somos</Link>
-      <Link to="/">Blog Santa Ajuda</Link>
-      <Link to="/">Produtos</Link>
-      <Link to="/">Lojas</Link>
-      <Link to="/">Cursos</Link>
-      <Link to="/">Contato</Link>
-    </nav>
-  </SiteHeader>
-);
+const Header = () => {
+
+
+  return (
+    <>
+    <SiteHeader>
+      <Logo white main />
+      <nav>
+        <Link to="/">Quem Somos</Link>
+        <Link to="/santa-ajuda">Blog</Link>
+        <Link to="/produtos">Produtos</Link>
+        <Link to="/lojas">Lojas</Link>
+        <Link to="/contato">Contato</Link>
+      </nav>
+      </SiteHeader>
+      <Logo />
+      </>
+  )
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
