@@ -2,7 +2,7 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
 import styled from 'styled-components';
 
-interface ISiteLogo extends Record<string, any> {
+interface ISiteLogo {
   white?: boolean;
   main?: boolean;
 }
@@ -66,7 +66,7 @@ const Logo = ({ white, main }: ISiteLogo) => {
         {main && <h3 className="visually-hidden">{title}. {description}</h3>}
       </Link>
     </SiteLogo>
-  )
+  );
 };
 
 export default Logo;

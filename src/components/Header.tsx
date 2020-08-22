@@ -1,8 +1,9 @@
-import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 import styled from 'styled-components';
 import Logo from "./Logo";
+import Hamburguer from './Hamburguer';
+import MainNavigation from './MainNavigation';
+import { useToggle } from '../hooks/useToggle';
 
 const SiteHeader = styled.header`
   background-color: var(--darkBlue);
@@ -13,56 +14,26 @@ const SiteHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 0 var(--padding);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 
-  & a {
-    color: var(--white);
-    display: inline-block;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: var(pText);
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: all .2s;
-    &:hover {
-      text-decoration-color: var(--white);
-    }
-
-    & + a {
-      margin-left: calc(var(--margin) / 2);
-    }
-  }
   h1 {
     margin: 0;
   }
 `;
 
-
 const Header = () => {
-
+  const [open, , toggleMenu] = useToggle(false);
 
   return (
-    <>
     <SiteHeader>
       <Logo white main />
-      <nav>
-        <Link to="/">Quem Somos</Link>
-        <Link to="/santa-ajuda">Blog</Link>
-        <Link to="/produtos">Produtos</Link>
-        <Link to="/lojas">Lojas</Link>
-        <Link to="/contato">Contato</Link>
-      </nav>
-      </SiteHeader>
-      <Logo />
-      </>
-  )
-};
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: "",
+      <MainNavigation open={open} />
+      <Hamburguer open={open} onClick={toggleMenu} />
+    </SiteHeader>
+  );
 };
 
 export default Header;

@@ -26,22 +26,23 @@ const Layout = ({ children }: LayoutProps) => {
       }
     }
   `);
+  const { title } = data.site.siteMetadata;
 
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div
         style={{
-          margin: "0 auto",
+          margin: "3rem auto 0",
           maxWidth: 960,
           padding: "0 1.0875rem 1.45rem",
+
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with{" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()} {title}
         </footer>
       </div>
     </>
