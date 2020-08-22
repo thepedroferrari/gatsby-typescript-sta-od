@@ -18,7 +18,7 @@ const SiteLogo = styled.hgroup<ISiteLogo>`
   }
   h1 {
     font-family: 'Arial Black';
-    font-size: 1.33em;
+    font-size: 1.23em;
     font-weight: bolder;
 
     & span {
@@ -27,14 +27,14 @@ const SiteLogo = styled.hgroup<ISiteLogo>`
 
       &::first-letter {
         color: ${props => props.white ? "var(--white)" : "var(--blue)"};
-        font-size: 1.6em;
+        font-size: 1.5em;
       }
     }
   }
   h2 {
     color: ${props => props.white ? "var(--white)" : "var(--blue)"};
     font-family: 'Arial Narrow';
-    font-size: .88em;
+    font-size: .8em;
     font-weight: 100;
     margin-left: .15em;
   }

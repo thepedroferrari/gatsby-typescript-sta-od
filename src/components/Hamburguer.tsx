@@ -27,7 +27,7 @@ const HamburguerStyles = styled.i<IHamburguer>`
       width: 40px;
 
       &:first-child {
-        top: 40px;
+        top: 32px;
         transform: ${(props) => props.open && 'rotate(45deg)'};
       }
 
@@ -36,7 +36,7 @@ const HamburguerStyles = styled.i<IHamburguer>`
       }
 
       &:last-child {
-        top: 40px;
+        top: 32px;
         transform: ${(props) => props.open && 'rotate(-45deg)'};
       }
     }

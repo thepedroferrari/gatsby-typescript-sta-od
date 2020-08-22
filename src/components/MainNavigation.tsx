@@ -32,13 +32,13 @@ const MainNav = styled.nav<IMainNavigation>`
     min-width: fit-content;
     max-width: 320px;
     text-align: right;
-    padding: 30px;
+    padding: 0 1rem 0 1.5rem;
     top: 3rem;
     background-color: var(--darkBlue);
     transition: right 300ms ease-in-out;
     a, a + a {
       margin-left: 0;
-      padding: 10px;
+      padding: .5rem 0;
     }
   }
 `;
