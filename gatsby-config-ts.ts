@@ -9,7 +9,7 @@ interface IAddress {
 
 interface ISocialNetworks {
   facebook: 'https://www.facebook.com/santa.odila',
-  instagram: 'https://www.instagram.com/santa.odila'
+  instagram: 'https://www.instagram.com/santa.odila';
 }
 
 interface ISiteMetadata {
@@ -80,6 +80,20 @@ export const plugins = [
       path: `${__dirname}/src/images`,
     },
   },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `pages`,
+      path: `${__dirname}/src/pages`,
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `posts`,
+      path: `${__dirname}/src/posts`,
+    },
+  },
   "gatsby-transformer-sharp",
   "gatsby-plugin-sharp",
   {
@@ -94,4 +108,5 @@ export const plugins = [
       icon: "src/images/gatsby-icon.png",
     },
   },
+  "gatsby-transformer-remark"
 ];
