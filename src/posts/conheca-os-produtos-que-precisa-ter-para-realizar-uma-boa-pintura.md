@@ -3,8 +3,6 @@ title: "Conheça os produtos que precisa ter para realizar uma boa pintura"
 date: "2020-08-07"
 ---
 
-# Conheça os produtos que precisa ter para realizar uma boa pintura - Santa Odila
-
 É preciso tomar cuidados e se preparar para qualquer nova tarefa na vida. Para realizar uma pintura dentro de casa não é diferente. Por mais que pareça simples pintar uma parede, existem instruções que são imprescindíveis para que o resultado saia como o esperado. Comece com a lista dos objetos essenciais para uma boa pintura. Mas não desista que não é, assim, um bicho de sete cabeças.
 
 **O que você precisa ter para a pintura:**

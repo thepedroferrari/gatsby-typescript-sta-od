@@ -3,8 +3,6 @@ title: "10 dicas para que seu lar seja adequado ao novo comportamento das pessoa
 date: "2020-08-07"
 ---
 
-# 10 dicas para que seu lar seja adequado ao novo comportamento das pessoas - Santa Odila
-
 Muita coisa mudou após a pandemia do Covid-19, fora e dentro de nós. A convivência em casa (que pode ter virado casa-escritório), no trabalho e na rua, requer adequações. A convivência social e em família mudou, porque há novas conexões e muito mais convivência. Engenheiros e arquitetos já pensam nisso. Até os materiais que serão utilizados nos novos lares poderão mudar e o conforto pode ser ainda mais priorizado do que antes.
 
 Mas, afinal, o que muda no morar após a pandemia? Passamos mesmo mais tempo em nossas casas e descobrimos novas necessidades. Reparamos em detalhes nunca reparados antes. Por exemplo, aquele piso de ardósia, complicado de limpar, passou a ser foco de discussão. Só um exemplo.
