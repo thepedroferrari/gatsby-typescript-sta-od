@@ -1,7 +1,10 @@
 ---
 title: "10 dicas para que seu lar seja adequado ao novo comportamento das pessoas"
 date: "2020-08-07"
+featuredImage:
 ---
+
+![a](./test.jpg)
 
 Muita coisa mudou após a pandemia do Covid-19, fora e dentro de nós. A convivência em casa (que pode ter virado casa-escritório), no trabalho e na rua, requer adequações. A convivência social e em família mudou, porque há novas conexões e muito mais convivência. Engenheiros e arquitetos já pensam nisso. Até os materiais que serão utilizados nos novos lares poderão mudar e o conforto pode ser ainda mais priorizado do que antes.
 

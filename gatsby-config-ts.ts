@@ -95,7 +95,21 @@ export const plugins = [
     },
   },
   "gatsby-transformer-sharp",
-  "gatsby-plugin-sharp",
+  `gatsby-plugin-sharp`,
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 960,
+            quality: 70,
+          },
+        },
+      ],
+    },
+  },
   {
     resolve: "gatsby-plugin-manifest",
     options: {
@@ -107,6 +121,5 @@ export const plugins = [
       display: "minimal-ui",
       icon: "src/images/gatsby-icon.png",
     },
-  },
-  "gatsby-transformer-remark"
+  }
 ];
